@@ -1,4 +1,13 @@
 body{
     margin: 0;
     font-family: 'IM Fell DW Pica', serif;
+}body{
+    overflow-x: hidden;
+    margin: 0;
+    margin-top: 70px;
+    font-family: 'IM Fell DW Pica', serif;
+}
+:root {
+    --green-background: #44CC66;
+    --green-hover-background: #37a051;
 }
