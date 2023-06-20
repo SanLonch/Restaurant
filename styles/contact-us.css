@@ -1,0 +1,88 @@
+main {
+    max-width: 1024px;
+    width: 800px;
+    margin: 30px auto 200px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 40px;
+    font-size: 40px;
+    margin-bottom: var(--main-element-margin);
+    text-align: center;
+}
+
+.contact-info p, .contact-info span {
+    margin-top: 0;
+    margin-bottom: var(--main-element-margin);
+    font-size: 25px;
+}
+
+.contact-info span {
+    text-decoration: underline;
+}
+
+.map {
+    border: 1px solid black !important;
+}
+
+.contact-form {
+    margin-top: var(--main-element-margin);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 25px;
+    margin-top: var(--main-element-margin-top);
+}
+
+.contact-form input {
+    width: 400px;
+    height: 30px;
+    outline: 0;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.contact-form input:focus {
+    border: 2px solid var(--green-background);
+}
+
+.contact-form input ::placeholder {
+    font-size: 20px;
+    color: #000000;
+    opacity: 0.7;
+}
+
+.contact-form textarea {
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contact-form input[type="submit"] {
+    width: 200px;
+    height: 40px;
+    display: block;
+    background-color: var(--main-background);
+    font-size: 35px;
+    margin-top: var(--main-element-margin-top);
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'IM Fell DW Pica';
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: var(--main-hover-background);
+}
