@@ -3,6 +3,10 @@ header{
     height: 70px;
     display: flex;
     justify-content: center;
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 10;
+    top: 0;
     font-family: Inter;
 }
 
@@ -12,14 +16,13 @@ header img{
     margin: 0 130px;
 }
 
-
 .work-hours p {
     font-family: Inter;
     font-style: Regular;
     font-size: 17px;
     line-height: 21px;
     line-height: 100%;
-    align: Left;
+    box-align: Left;
     vertical-align: Top;
 }
 
@@ -29,18 +32,18 @@ header img{
     font-size: 17px;
     line-height: 21px;
     line-height: 100%;
-    align: Left;
+    box-align: Left;
     vertical-align: Top;
     width: 210px;
-    margin-top: 30px;
+    margin-top: var(--main-element-margin-top);
 }
 
 
 nav{
     height: 60px;
     width: 100%;
-    margin: 0;
-    background-color: #44AB42;
+    margin: var(--main-element-margin-zero);
+    background-color: var(--main-background);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,8 +58,8 @@ nav a{
     line-height: 60px;
 }
 
-nav A:hover{
-    background: #009926;
+nav a:hover{
+    background-color: var(--main-hover-background);
 }
 
 nav a:nth-child(2){
