@@ -1,4 +1,27 @@
 body{
+    overflow-x: hidden;
     margin: 0;
+    margin-top: 70px;
     font-family: 'IM Fell DW Pica', serif;
+}
+
+:root {
+    --main-element-margin-zero: 0;
+    --main-element-margin: 10px;
+    --main-element-margin-top: 30px:
+}
+
+.main-theme {
+    --main-background: #44CC66;
+    --main-hover-background: #37a051;
+}
+
+.my-theme {
+    --main-background: #00b4d8;
+    --main-hover-background: #023e8a;
+}
+
+.my-theme2 {
+    --main-background: #e01e37;
+    --main-hover-background: #a11d33;
 }
