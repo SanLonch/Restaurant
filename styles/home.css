@@ -3,50 +3,55 @@ main .main-img{
     height: 370px;
     background-image: url("../img/restaurant-food.jpg");
     background-size: cover;
-    background-position: top;
-    opacity: 0.6;
-}
-.main-img h1 {
-    font-family: Kenia;
-}
-.main-img a {
-    font-family: Kranky;
+    background-position: center;
     opacity: 0.8;
 }
 
+.main-img h1 {
+    font-family: Kenia;
+}
+
+.main-img a {
+    font-family: Kranky;
+}
+
 main h1{
-    color: #ffffff ;
-    margin: 0;
-    margin-left: 42px;
-    padding-top: 58px;
-    padding-bottom: 69px ;
+    color: #000;
+    left: 42px;
     font-size: 50px;
+    position: absolute;
+    bottom: 400px;
 }
 
 main a{
-    background: #A9A1A1;
-    width: 400px;
+    background: #000;
+    width: 350px;
     height: 40px;
     text-decoration: none;
     font-size: 50px;
-    color: #000000;
-    padding: 10px 20px;
-    margin-left: 100px;
+    color: #ffffff;
+    position: absolute;
+    left: 12%;
+    bottom: 300px;
+    text-align: center;
+    padding: 5px;
+    line-height: 50px;
 } 
 
 
 main a:hover{
-    background-color: #00cc66;
+    background-color: var(--main-background);
 }
 
 
 .menu{
     width: 100%;
-    padding: 0 102px;
+    margin: 40px 0;
+    padding: 0 20px;
 }
 
 .menu h2{
-    margin: 0;
+    margin: var(--main-element-margin-zero);
     text-align: center;
     font-size: 60px;
 }
@@ -63,7 +68,29 @@ main a:hover{
 
 .menu-container div{
     width: 33%;
+}
 
+.menu-container img {
+    opacity: 70%;
+}
+
+.menu-container img:hover {
+    opacity: 100%;
+    animation-name: main-img-animation;
+    animation-duration: 2s;
+}
+
+@keyframes main-img-animation {
+    25% {
+        opacity: 80%;
+    }
+    50% {
+        opacity: 90%;
+    }
+    100% {
+        opacity: 100%;
+        transform: scale(1.7);
+    }
 }
 
 .meal{
@@ -80,4 +107,29 @@ main a:hover{
 .meal span{
     font-size: 24px;    
     line-height: 60px;
+}
+
+@media screen and (max-width: 599px) {
+    .menu-container {
+        display: block;
+    }
+    .menu-container div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    main h1 {
+        display: none;
+    }
+    main a {
+        font-size: 30px;
+        width: 200px;
+        height: 30px;
+        line-height: 33px;
+        top: 40%;
+    }
+    main .main-img {
+        height: 270px;
+    }
 }
